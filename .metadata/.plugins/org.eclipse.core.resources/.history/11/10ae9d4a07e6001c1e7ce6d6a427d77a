@@ -1,0 +1,15 @@
+package step01_syntax;
+
+public class Ex02Variable {
+
+	public static void main(String[] args) {
+		// 타입 변수명 = 값;
+		// 기본타입 (primitive) 타입
+		// 정수
+		
+		byte vb1 = -128;
+//		byte vb2 = 128; // !ERROR
+		System.out.println(vb1);
+	}
+
+}

@@ -1,0 +1,27 @@
+package step01_syntax;
+
+public class Ex03Operation {
+
+	public static void main(String[] args) {
+		// 숫자 연산 : +, -, *, /, %
+		int v1 = 10;
+		int v2 = 3;
+		
+		// System.out.println(v1 % v2);
+		
+		// 증감 연산 : ++, -- 
+		// System.out.println(++ v1); // 11
+		// System.out.println(v1 ++); // 11
+		// System.out.println(v1); // 12
+		
+		// 기본 연산
+		byte v3 = 10;
+		byte v4 = 3;
+		byte v5 = (byte) (v3 + v4); // 명시적 형변환이 필요하다(기본형 int인데 보다 작은 byte로 넘어 가려면 해줘야함. 데이터소실 위험이 있다)
+		// int v5 = (v3 + v4);
+		System.out.println(v5);
+		
+		System.out.println(v3/v4);
+	}
+
+}

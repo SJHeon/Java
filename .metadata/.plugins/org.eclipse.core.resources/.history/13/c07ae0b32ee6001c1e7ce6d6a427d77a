@@ -1,0 +1,10 @@
+package step01_syntax;
+
+public class Ex05Loop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

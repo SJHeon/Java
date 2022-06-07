@@ -1,0 +1,20 @@
+/* 참조 타
+ * - 변수 -- (stack), 객체 -- 힙(heap) 영역에서 생성
+ * - 기본값 : null
+ * 		- 참조할 객체가 없을 경우, NullpointerException(NP) 발생
+ */
+
+package step01_syntax;
+
+public class Ex06Reference {
+
+	public static void main(String[] args) {
+		// 문자열 (String)
+		// ==, equals
+		
+		String str1 = "Java";
+		System.out.println(str1);
+		System.out.println(str1.hashCode());
+	}
+
+}
