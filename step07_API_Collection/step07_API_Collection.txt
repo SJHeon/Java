@@ -16,10 +16,21 @@ step07_API_Collection
 			- 중복 허용
 			- ArrayList, Vector, LinkedList, ...
 			
+				- ArrayList
+					- 내부 배열에 객체를 저장하여 인데긋로 관리
+					- 초기 생성시 크기 지정 가능(초기값은 10)
+					
+				- LinkedList
+					- Node 단위로 구성, Data와 Pointer 가지고 한 줄로 연결되어 있는 자료 구조
+					- 각 Node는 연결, Pointer는 Node의 연결을 담당
+					- 데이터 변경시 인덱스가 변경되는 것이 아니라 Node를 참조하고 있는 링크 주소만 변경하여 관리(그래서 중간에 추가하고 삭제하는 연산이 빠름)
+					- 초기 크기 생성시 지정 불가능
+			
 		- Set 인터페이스
 			- 유일한 값을 관리
 			- 중복 불허
 			- HashSet, TreeSet, ...
+			
 	- Map 인터페이스
 			
 		- Key : Value 로 이루어진 객체 관리

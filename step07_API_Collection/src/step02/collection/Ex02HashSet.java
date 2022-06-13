@@ -3,7 +3,7 @@ package step02.collection;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class Ex2HashSet {
+public class Ex02HashSet {
 
 	public static void main(String[] args) {
 		// HashSet
