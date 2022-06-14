@@ -4,7 +4,7 @@ step06_Exception
 1. 예외(Exception)
 	- 사용자 혹은 개발자의 잘못으로 발생하는 오류, 처리 가능한 에러
 	- 종류
-		- 일반 예외 : 컴파일 체크 계열 (Calss, ...)
+		- 일반 예외 : 컴파일 체크 계열 (Class, ...)
 			- java.lang.RuntimeException을 제외한 모든 예외 클래스
 		
 		- 실행 예외

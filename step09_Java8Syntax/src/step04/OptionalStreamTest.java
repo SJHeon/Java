@@ -76,6 +76,7 @@ public class OptionalStreamTest {
 		arr3.stream().sorted(Comparator.reverseOrder());
 
 		// step03 최종 연산
+		// reduce
 		// count, min, max, sum
 		// foreach
 		// collect
@@ -137,13 +138,11 @@ public class OptionalStreamTest {
 		streamMbti.forEach(person -> System.out.println(person));
 
 		System.out.println("---");
-		personList.stream().filter(p -> (p.getMbti().contains("i") && p.getMbti().contains("j")))
+		personList.stream().filter(person -> (person.getMbti().contains("i") && person.getMbti().contains("j")))
 				.forEach(System.out::println);
+		personList.stream().filter(v -> v.getMbti().matches("^i..j$")).forEach(System.out::println); // 정규 표현식
 		System.out.println("---");
 
-//		for (Person person2 : personResult) {
-//			System.out.println(person2);
-//		}
 	}
 
 }

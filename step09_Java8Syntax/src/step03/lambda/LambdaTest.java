@@ -10,7 +10,7 @@ public class LambdaTest {
 		void method(int x);
 	}
 
-	// 함수형 인터페이스 어노테이션
+	// 함수형 인터페이스 어노테이션 : 람다 인터페이스에서 하나의 메소드만 쓴다고 인식
 	@FunctionalInterface
 	interface LambdaInter3 {
 		int method(int x, int y);
@@ -44,7 +44,7 @@ public class LambdaTest {
 		// 람다2 : 매개변수가 1개 있는 람다식
 		LambdaInter2 li2;
 		li2 = (int x) -> {
-//			System.out.println(x + 1);
+//			System.out.println(x + 1); // 인터페이스가 가지고있는 추상메소드에 자동 저장
 		};
 //		li2 = x -> System.out.println(x+1); //매개변수가 1개 일때, 괄호, 자료형 생략 가능
 
