@@ -22,19 +22,16 @@ public class CharacterStreamTest {
 		}
 
 		// Reader //finally 변환 해봐
-		try {
-			FileReader fr = new FileReader("CharacterStream.txt");
-
+//		FileReader frFileReader = null;
+		// try-with-resources
+		try (FileReader fr = new FileReader("CharacterStream.txt");) {
 			int data;
-			try {
-				while ((data = fr.read()) != -1) {
-					System.out.println((char) data);
-				}
-				fr.close();
-			} catch (IOException e) {
-				e.printStackTrace();
+			while ((data = fr.read()) != -1) {
+				System.out.println((char) data);
 			}
 		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
